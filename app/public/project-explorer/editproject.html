@@ -15,7 +15,7 @@
                 <h2>One Stop Database For Academic Projects</h2>
             </header>
             <nav>
-                <a href="/project-explorer/">Home</a> 
+                <a href="/project-explorer/index.html">Home</a>
                 <a href="/project-explorer/search.html">Projects</a> 
                 <a href="/project-explorer/login.html">Login</a> 
                 <a href="/project-explorer/register.html">Register</a>  
@@ -35,7 +35,7 @@
                 <header>
                     <h3>Edit Project</h3>  
                 </header>
-                <form name='“editProject”' action='/project-explorer/editproject.html' method='post'>
+                <form name='editProject' action='/project-explorer/editproject.html' method='post'>
                     <p>Project Name:<br> 
                         <input type='text' name='name'/>
                     </p>
@@ -50,7 +50,7 @@
                         <input type='text' name='tags'/>
                     </p>
                     <p>Upload File:<br> 
-                        <input type='text' name='projectFile'/>
+                        <input type='file' name='projectFile'/>
                     </p>
                     <br>
                     <input type="submit" value="Submit">
