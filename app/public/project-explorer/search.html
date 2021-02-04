@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projects | Project Explorer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Project Explorer</h1>
+                <h2>One Stop Database For Academic Projects</h2>
+            </header>
+            <nav>
+                <a href="/project-explorer/">Home</a> 
+                <a href="/project-explorer/search.html">Projects</a> 
+                <a href="/project-explorer/login.html">Login</a> 
+                <a href="/project-explorer/register.html">Register</a>  
+                <a href="/project-explorer/createproject.html">Submit</a> 
+            </nav>
+            <section>
+                <header>
+                    <h3>Search Project By</h3>  
+                </header>
+                <form name='searchForm' action='/project-explorer/search.html' method='post'>
+                    <input type='text' name='searchTerm' value="Project Name, Authors, Abstract, Tags"/>
+                    <p>Search By: 
+                        <br><select name='searchType'>
+                            <option value="Name">Name</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Authors">Authors</option>
+                            <option value="Tags">Tags</option>
+                        </select>
+                    </p>
+                    <br>
+                    <input type="submit" value="Search">
+                </form>
+            </section>
+            <section>
+                <header>
+                    <h1>Search Result</h1>  
+                </header>
+                <div>
+                    <h3>Project 1</h3>
+                    <ul>
+                        <li>Name: Project 1</li>
+                        <li>Description: There are many variations of passages of Lorem Ipsum available, but the majority 
+                            have suffered alteration in some form, by injected humour, or randomised words which don't look 
+                            even slightly believable
+                        </li>
+                        <li>Program: Computer Science</li>
+                        <li>Authors: John Doe, Jane Doe</li>
+                        <li>Tags: #Asphyyia #GSW</li>
+                        <li>Abstract: Abstract</li>
+                        <li>Year: 2020 </li>
+                    </ul>
+
+                </div>
+               
+            </section>
+        </main>
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
