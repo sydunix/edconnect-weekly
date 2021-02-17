@@ -57,58 +57,59 @@
             </section>
             <section>
                 <div class="container">
-                    <div class="row row-cols-2 p-3">
-                      <div class="col">
+                    <div class="row">
+                      <div class="col-6">
                         <h5>Edit Project</h5>
                         <hr>
                       </div>
                       
-                      <div class="col">
+                      <div class="col-6">
                         <h5>Manage Project Files</h5>
                         <hr>
                       </div>
-                      
-                      <div class="col">
-                        <form class="" action='./login.html' method='post'>
-                            <div class="form-group">
-                                <label for="name">Project name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Project 1">
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="abstract">Project abstract</label>
-                                <textarea name='abstract' rows='4' class="form-control">Project 1 is a very interesting project</textarea>
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="authors">Author(s)</label>
-                                <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
-                            </div>
-        
-                            <div class="form-group">
-                                <label for="tags">Tag(s)</label>
-                                <input type="text" name="tags" class="form-control" placeholder="#web" aria-describedby="inputGroupFileAddon04">
-                            </div>
-        
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </form>
+                   </div>
 
-                      </div>
-                      <div class="col">
-                          <form class="" action="" method='post'>
-
+                   <div class="row">
+                        <div class="col-6">
+                            <form class="" action='./login.html' method='post'>
+                                <div class="form-group">
+                                    <label for="name">Project name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Project 1">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="abstract">Project abstract</label>
+                                    <textarea name='abstract' rows='4' class="form-control">Project 1 is a very interesting project</textarea>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="authors">Author(s)</label>
+                                    <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="tags">Tag(s)</label>
+                                    <input type="text" name="tags" class="form-control" placeholder="#web" aria-describedby="inputGroupFileAddon04">
+                                </div>
+                        
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </form>                       
+                        </div>
+                        <div class="col-6">
+                            <form class="" action="" method='post'>
+                    
                             <div class="form-group">
                                 <!-- <label for="projectFile"></label> -->
                                 <div class="input-group">
                                     <div class="custom-file">
-                                      <input type="file" class="form-control custom-file-input" name="projectFile" aria-describedby="inputGroupFileAddon04">
-                                      <label class="custom-file-label" for="projectFile">Click to open file browser</label>
+                                        <input type="file" class="form-control custom-file-input" name="projectFile" aria-describedby="inputGroupFileAddon04">
+                                        <label class="custom-file-label" for="projectFile">Click to open file browser</label>
                                     </div>
                                 </div>
                             </div>
-
+                    
                             <hr>
-
+                    
                             <div class="card-deck d-flex flex-column">
                                 <div class="card">
                                     <h5 class="card-header">Project Files</h5>
@@ -118,14 +119,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                          </form>
-                      </div>
- 
-                    </div>
+                        
+                            </form>
+                        </div>
+                   </div>
+
                 </div>
             </section>
-
         </main>
         <footer class="container-md position-static bg-light d-flex justify-content-end">
             <p><span class="text-muted">Project Explorer &copy 2020</span>
