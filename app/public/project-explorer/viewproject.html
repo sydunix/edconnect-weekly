@@ -3,55 +3,121 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>View | Project Explorer</title>
+        <title>Project Explorer</title>
         <meta name='description' content=''>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href=''>
+        <link rel='stylesheet' href='css/bootstrap.min.css'>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary position-static mb-2 d-print">
+            <a class="navbar-brand font-weight-bold" href="./index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Search Field & Button -->
+            <form name ="searchForm" action="search.html" class="form-inline my-2 my-lg-0" method="post">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+            </form>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./createProject.html">Submit <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./register.html">Sign up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    <body>
         <main>
-            <header>
-                <h1>Project Explorer</h1>
-                <h2>One Stop Database For Academic Projects</h2>
-            </header>
-            <nav>
-                <a href='./index.html'>Home</a>
-                <a href='./search.html'>Projects</a> 
-                <a href='./login.html'>Login</a> 
-                <a href='./register.html'>Register</a>  
-                <a href='./createproject.html'>Submit</a> 
-            </nav>
-            <section>
-                <header>
-                    <h3>Project 1</h3>  
-                </header>
-                <a href='editproject.html'>Edit Project</a>
-                <ul>
-                    <li>Created by: Jane Doe</li>
-                    <li>Date Created: 01/01/2020</li>
-                    <li>Last Updated: 02/02/2020</li>
-                </ul>
+            <section class="p-4 mt-1 ">
+                <div class="container">
+                    <h4>Project 1</h4>
+                </div>
+                    
+                <div class="container bg-light">
+                    <div class="row row-cols-4 p-3">
+                      <div class="col">Created By</div>
+                      <div class="col">Date Created</div>
+                      <div class="col">Last Updated</div>
+                      <div class="col d-flex justify-content-end"><button type="submit" class="btn btn-primary">Edit Project</button></div>
+                      <div class="col my-md-n3">Ade Chris</div>
+                      <div class="col my-md-n3">2020-08-30</div>
+                      <div class="col my-md-n3">2020-08-30</div>
+                    </div>
+                  </div>
             </section>
             <section>
-                <header>
-                    <h3>Project Abstract</h3>  
-                </header>
-                <div>Description: There are many variations of passages of Lorem Ipsum available, but the majority 
-                    have suffered alteration in some form, by injected humour, or randomised words which don't look 
-                    even slightly believable
+                <div class="container">
+                    <div class="row row-cols-2 p-3">
+                      <div class="col">
+                        <h5>Project Abstract</h5>
+                        <hr>
+                      </div>
+                      
+                      <div class="col">
+                        <h5>Project Details</h5>
+                        <hr>
+                      </div>
+                      
+                      <div class="col">
+                        <p>A full stack software developer works with both the front end and  back end of an application. 
+                            This course will expose you to the underlying concepts for both front-end & back-end development. 
+                            We will cover multiple technologies on both sides, including but not limited to; HTML, JavaScript, 
+                            MongoDB, NodeJS etc.</p>
+
+                        <form class="" action='./login.html' method='post'>
+        
+                            <div class="form-group">
+                                <label for="abstract" class="font-weight-bold">Comments</label>
+                                <textarea name='abstract' rows='4' class="form-control">Leave a comment</textarea>
+                            </div>
+        
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <hr>
+                        <div class="d-flex justify-content-center"><p>No comments added yet</p></div>
+                      </div>
+                      <div class="col">
+                        <div class="card-deck d-flex flex-column">
+                            <div class="card">
+                              <h5 class="card-header">Author(s)</h5>
+                              <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <p class="card-text">Ade Chris</p>
+                              </div>
+                              <div class="card-footer">     
+                                <a href="#"><small class="text-primary">#web</small></a> 
+                              </div>
+                        </div>
+                        <div class="card mt-2">
+                            <h5 class="card-header">Project FIles</h5>
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <p class="card-text d-flex justify-content-center">No file uploaded yet</p>
+                            </div>
+                        </div>
+
+                      </div>
+ 
+                    </div>
                 </div>
             </section>
-            <section>
-                <header>
-                    <h3>Project Details</h3>  
-                </header>
-                <ul>
-                    <li>Authors: John Doe, Jane Doe</li>
-                    <li>Tags: #Asphyxia, #GSW</li>
-                    <li>Project Files: <a href='./viewproject.html'>File 1</a>, <a href='./viewproject.html'>File 2</a></li>
-                </ul>
-            </section>
+
         </main>
+        <footer class="container-md position-static bg-light d-flex justify-content-end">
+            <p><span class="text-muted">Project Explorer &copy 2020</span>
+                <span class="text-dark font-weight-bold">  Edconnect</span></p>
+
+        </footer>
 
 
         

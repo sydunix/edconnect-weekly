@@ -3,64 +3,129 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Projects | Project Explorer</title>
+        <title>Project Explorer</title>
         <meta name='description' content=''>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href=''>
+        <link rel='stylesheet' href='css/bootstrap.min.css'>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary position-static mb-2 d-print">
+            <a class="navbar-brand font-weight-bold" href="./index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Search Field & Button -->
+            <form name ="searchForm" action="search.html" class="form-inline my-2 my-lg-0" method="post">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+            </form>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./createProject.html">Submit <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./register.html">Sign up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+    <body>
         <main>
-            <header>
-                <h1>Project Explorer</h1>
-                <h2>One Stop Database For Academic Projects</h2>
-            </header>
-            <nav>
-                <a href='./index.html'>Home</a>
-                <a href='./search.html'>Projects</a> 
-                <a href='./login.html'>Login</a> 
-                <a href='./register.html'>Register</a>  
-                <a href='./createproject.html'>Submit</a> 
-            </nav>
             <section>
-                <header>
-                    <h3>Search Project By</h3>  
-                </header>
-                <form name='searchForm' action='./search.html' method='post'>
-                    <input type='text' name='searchTerm' value='Project Name, Authors, Abstract, Tags'/>
-                    <p>Search By: 
-                        <br><select name='searchType'>
-                            <option value='Name'>Name</option>
-                            <option value='Abstract'>Abstract</option>
-                            <option value='Authors'>Authors</option>
-                            <option value='Tags'>Tags</option>
-                        </select>
-                    </p>
-                    <br>
-                    <input type='submit' value='Search'>
-                </form>
-            </section>
-            <section>
-                <header>
-                    <h1>Search Result</h1>  
-                </header>
-                <div>
-                    <h3>Project 1</h3>
-                    <ul>
-                        <li>Name: Project 1</li>
-                        <li>Description: There are many variations of passages of Lorem Ipsum available, but the majority 
-                            have suffered alteration in some form, by injected humour, or randomised words which don't look 
-                            even slightly believable
-                        </li>
-                        <li>Program: Computer Science</li>
-                        <li>Authors: John Doe, Jane Doe</li>
-                        <li>Tags: #Asphyxia, #GSW</li>
-                        <li>Abstract: Abstract</li>
-                    </ul>
-
+                <div class="container mt-4">
+                    <h3>Project Gallery</h3>
                 </div>
-               
+                <div class="container bg-light p-3 mt-1">
+                    <form class="mx-auto w-75" action='./search.html' method='post'>
+                        <div class="form-row align-items-center">
+
+                            <div class="form-group col-md-7">
+                                <label for="searchTerm"></label>
+                                <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                            </div>
+        
+        
+                            <div class="form-group col-md-3 pt-4">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Search by</div>
+                                    </div>
+                                    <select name="searchType" class="form-control form-control-lg">
+                                        <option value=''></option>
+                                        <option value='Name'>Name</option>
+                                        <option value='Abstract'>Abstract</option>
+                                        <option value='Authors'>Authors</option>
+                                        <option value='Tags'>Tags</option>
+                                    </select>
+                                </div>  
+                            </div>
+
+                            <div class="form-group col-md-auto pt-4">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+
+            <section class="p-3 mt-4 ">
+                <div class="container">
+                    <h5>All Projects <small class="text-muted">(0 results)</small></h5>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="card-deck">
+                            <!-- Card 1 begins here -->
+                            <article class="card">
+                                <div class="card-body">
+                                        <h5 class="card-title text-primary">Project Title</h5>
+                                        <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            <!-- <a href="#"><small class="text-secondary text-decoration-underline">Read More &raquo;</small></a>--> </p> 
+                                        <div class="d-flex justify-content-between">
+                                            <a class="text-primary"  href="#">#html</a>
+                                            <a class="text-primary"  href="#">#css</a>
+                                            <a class="text-primary"  href="#">#javascript</a>
+                                        </div>
+                                </div>
+                            </article> <!-- Card 1 ends here -->   
+
+
+                            <!-- Card 2 begins here -->
+                            <article class="card">
+                                <div class="card-body">
+                                        <h5 class="card-title text-primary">Project Title</h5>
+                                        <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a class="text-primary"  href="#">#html</a>
+                                            <a class="text-primary"  href="#">#css</a>
+                                            <a class="text-primary"  href="#">#javascript</a>
+                                        </div>
+                                    </div>
+                            </article> <!-- Card 2 ends here -->
+                        </div>    
+                    </div>
+                </div>
             </section>
         </main>
+        <footer class="container-md fixed-bottom bg-light d-flex justify-content-end">
+            <p><span class="text-muted">Project Explorer &copy 2020</span>
+                <span class="text-dark font-weight-bold">  Edconnect</span></p>
+
+        </footer>
 
 
         

@@ -6,61 +6,119 @@
         <title>Project Explorer</title>
         <meta name='description' content=''>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href=''>
+        <link rel='stylesheet' href='css/bootstrap.min.css'>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary position-static mb-2 d-print">
+            <a class="navbar-brand font-weight-bold" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Search Field & Button -->
+            <form name ="searchForm" action="search.html" class="form-inline my-2 my-lg-0" method="post">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+            </form>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="createProject.html">Submit <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Sign up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
         <main>
-            <header>
-                <h1>Project Explorer</h1>
-                <h2>One Stop Database For Academic Projects</h2>
-            </header>
-            <nav>
-                <a href='index.html'>Home</a>
-                <a href='search.html'>Projects</a> 
-                <a href='login.html'>Login</a> 
-                <a href='register.html'>Register</a>  
-                <a href='createproject.html'>Submit</a> 
-            </nav>
-            <p>This application allows you explore various academic projects. You can search, upload and browse projects</p>
-            <h2>Project List</h2>
             <section>
-                <h3>Project 1</h3>
-                <ul>
-                    <li>Name: Project 1</li>
-                    <li>Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a galley of type and scrambled it to make a type specimen book. 
-                    </li>
-                    <li>Program: Computer Science</li>
-                    <li>Year: 2018 </li>
-                </ul>
+                <div class="container-md">
+                    <div class="jumbotron p-5">
+                            <h1 class="display-5">Welcome to Project Explorer</h1>
+                            <p>Project Explorer is a repository for final year projects across all departments at 
+                                your institution. You can submit your project and search projects submitted by others
+                                to learn form</p>
+                            <p><a class="btn btn-primary" href="register.html" role="button">Get Started</a>
+                                <a class="btn btn-secondary" href="login.html" role="button">Login</a></p>
+                    </div>
+                </div>
             </section>
             <section>
-                <h3>Project 2</h3>
-                <ul>
-                    <li>Name: Project 2</li>
-                    <li>Description: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in 
-                        a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                    </li>
-                    <li>Program: Computer Science</li>
-                    <li>Year: 2019 </li>
-                </ul>
+                <div class="container-md">
+                    <div class="card-deck">
+                        <!-- Card 1 begins here -->
+                        <article class="card">
+                            <div class="card-body">
+                                    <h5 class="card-title text-primary">Project Title</h5>
+                                    <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        <!-- <a href="#"><small class="text-secondary text-decoration-underline">Read More &raquo;</small></a>--> </p> 
+                                    <div class="d-flex justify-content-between">
+                                        <a class="text-primary"  href="#">#html</a>
+                                        <a class="text-primary"  href="#">#css</a>
+                                        <a class="text-primary"  href="#">#javascript</a>
+                                    </div>
+                                </div>
+                        </article> <!-- Card 1 ends here -->   
 
-            </section>
-            <section>
-                <h3>Project 3</h3>
-                <ul>
-                    <li>Name: Project 3</li>
-                    <li>Description: There are many variations of passages of Lorem Ipsum available, but the majority 
-                        have suffered alteration in some form, by injected humour, or randomised words which don't look 
-                        even slightly believable
-                    </li>
-                    <li>Program: Computer Science</li>
-                    <li>Year: 2020 </li>
-                </ul>
-            </section>
 
+                        <!-- Card 2 begins here -->
+                        <article class="card">
+                        <div class="card-body">
+                                <h5 class="card-title text-primary">Project Title</h5>
+                                <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="text-primary"  href="#">#html</a>
+                                    <a class="text-primary"  href="#">#css</a>
+                                    <a class="text-primary"  href="#">#javascript</a>
+                                </div>
+                            </div>
+                        </article> <!-- Card 2 ends here -->
+                            
+                        <!-- Card 3 begins here -->
+                        <article class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Project Title</h5>
+                                <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="text-primary"  href="#">#html</a>
+                                    <a class="text-primary"  href="#">#css</a>
+                                    <a class="text-primary"  href="#">#javascript</a>
+                                </div>
+                            </div>
+                        </article> <!-- Card 3 ends here -->     
+
+                        <!-- Card 4 begins here -->
+                        <article class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Project Title</h5>
+                                <h6 class="card-subtitle text-muted">Author 1, Author 2</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="text-primary"  href="#">#html</a>
+                                    <a class="text-primary"  href="#">#css</a>
+                                    <a class="text-primary"  href="#">#javascript</a>
+                                </div>
+                            </div>
+                        </article> <!-- Card 4 ends here --> 
+                    </div>
+                </div>
+            </section>
+            <br>
         </main>
+        <footer class="container-md fixed-bottom bg-light d-flex justify-content-end">
+            <p><span class="text-muted">Project Explorer &copy 2020</span>
+                <span class="text-dark font-weight-bold">  Edconnect</span></p>
+
+        </footer>
 
 
         
